@@ -1,0 +1,384 @@
+
+@font-face{
+    font-family: MyText;
+    src: url(Fonts/Arbaeen.ttf);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: MyText, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.TopImg {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopImg > .imgParent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+}
+
+.TopImg > .imgParent > .img{
+    width: 100%;
+    height: 100%; 
+    background-image: url("Plato-images/img/Top-Img.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.4;
+}
+
+.TopImg .textParent{
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.TopImg .main-texts h1{
+    font-size: 15vw;
+    line-height: 0.8;
+}
+
+.TopImg .main-texts h3{
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 8vw;
+}
+
+
+.main-header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: black;
+    border-top: 0.01px solid #424242;
+}
+
+.Hader-content {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 40px;
+}
+
+.Hader-content .Logo a {
+    font-size: 1.5em;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.recycling-process {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.process-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    border-bottom: none;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.step-item:nth-last-child(n+3) {
+    border-bottom: 1px solid #ddd;
+}
+.process-steps > li:nth-last-child(1),
+.process-steps > li:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.step-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    background-color: #38a169;
+    margin-inline-end: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step-item:nth-child(even) .step-icon {
+    background-color: #48bb78;
+}
+
+.step-content {
+    flex-grow: 1;
+}
+
+.step-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.step-content p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+.Portfolio {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.Portfolio > .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.portfolio-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    aspect-ratio: 1 / 1;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.overlay h6 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+
+
+.cta-section {
+    width: 100%;
+    background-image: url("Plato-images/img/cta-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cta-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 80px 0;
+}
+
+.cta-content {
+    text-align: center;
+    color: white;
+}
+
+.cta-content h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.cta-content a {
+    padding: 10px 30px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    transition: background-color 0.5s, border 0.5s;
+    display: inline-block;
+}
+
+.cta-content a:hover {
+    background-color: #48b47e;
+    border-color: #48b47e;
+}
+
+
+.contact-section {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h3 {
+    color: #48b47e;
+    font-size: 2em;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.icon-circle {
+    flex-shrink: 0;
+    font-size: 1.8em;
+    color: #48b47e;
+    margin-inline-end: 15px;
+}
+
+.contact-texts h4 {
+    font-size: 1.1em;
+    color: #585858;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.contact-texts p {
+    font-size: 0.9em;
+    color: #424242;
+    margin: 0;
+}
+
+
+@media (max-width: 992px) {
+
+    .Portfolio > .container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .step-item {
+        padding: 25px 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .step-item:last-child {
+        border-bottom: none;
+    }
+    .step-item:nth-last-child(n+3),
+    .process-steps > li:nth-last-child(1),
+    .process-steps > li:nth-last-child(2) {
+        border-bottom: none !important;
+    }
+    .step-icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 22px;
+        margin-inline-end: 15px;
+    }
+    .cta-content h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 576px) {
+    .Portfolio > .container {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+    }
+    .Portfolio {
+        padding: 40px 0;
+    }
+    .overlay h6 {
+        font-size: 1em;
+    }
+    .TopImg .main-texts h1 {
+        font-size: 18vw;
+    }
+    .TopImg .main-texts h3 {
+        font-size: 10vw;
+    }
+    .Hader-content {
+        padding: 10px 20px;
+    }
+    .Hader-content .Logo a {
+        font-size: 1.3em;
+    }
+}
