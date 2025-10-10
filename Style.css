@@ -53,16 +53,20 @@ body{
     opacity: 0.4;
 }
 
+
 .TopImg .textParent{
     color: aliceblue;
     text-align: center;
     padding: 20px;
+ 
 }
 
 .TopImg .main-texts h1{
     font-size: 15vw;
     line-height: 0.8;
 }
+
+
 
 .TopImg .main-texts h3{
     margin-top: 0;
@@ -71,14 +75,34 @@ body{
 }
 
 
+.About-Texts {
+    margin-bottom: 40px;
+    margin-top: -2rem;
+}
+
+.About-Texts h3 {
+    font-size: 1.25rem; 
+    font-weight: bold;
+    margin-top: 1.5rem; 
+    color: #1D8399; 
+}
+.About-Texts h2 {
+    font-size: 2.2em;
+    font-weight: 800;
+     color: #1D8399;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
 .main-header {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
     background-color: black;
-    border-top: 0.01px solid #424242;
+    border-bottom: 0.01px solid #1D8399;
 }
+
 
 .Hader-content {
     display: flex;
@@ -86,10 +110,22 @@ body{
     padding: 15px 40px;
 }
 
-.Hader-content .Logo a {
-    font-size: 1.5em;
+.Hader-content .Logo h3 {
+    font-size: 2.7dvh;
     font-weight: 800;
     color: rgb(255, 255, 255);
+
+    background-image: url('Plato-images/img/MasharekLogo.png'); 
+    background-repeat: no-repeat;
+    background-position: left center; 
+    background-size: 40px auto;
+
+    padding-left: 50px; 
+   
+    line-height: 40px;
+    height: 40px; 
+
+     display: block; 
 }
 
 
@@ -124,6 +160,23 @@ body{
 .process-steps > li:nth-last-child(2) {
     border-bottom: none;
 }
+.section-title-large {
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #1D8399;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Portfolio h3 {
+    font-size: 1.8em;
+    color: #1D8399;
+    margin-top: 0;
+     text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    --border-bottom: 2px solid #ddd;
+}
 
 .step-icon {
     flex-shrink: 0;
@@ -134,13 +187,13 @@ body{
     border-radius: 50%;
     font-size: 24px;
     color: white;
-    background-color: #38a169;
+    background-color: #1D8399;
     margin-inline-end: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .step-item:nth-child(even) .step-icon {
-    background-color: #48bb78;
+    background-color: #1D8399;
 }
 
 .step-content {
@@ -253,8 +306,8 @@ body{
 }
 
 .cta-content a:hover {
-    background-color: #48b47e;
-    border-color: #48b47e;
+    background-color: #1D8399;
+    border-color: #1D8399;
 }
 
 
@@ -269,7 +322,7 @@ body{
 }
 
 .section-title h3 {
-    color: #48b47e;
+    color: #1D8399;
     font-size: 2em;
 }
 
